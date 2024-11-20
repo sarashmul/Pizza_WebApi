@@ -1,0 +1,11 @@
+H:\webapi\lesson4\WebMyPizza\MyModelsLib\obj\Debug\net8.0\MyModelsLib.GeneratedMSBuildEditorConfig.editorconfig
+H:\webapi\lesson4\WebMyPizza\MyModelsLib\obj\Debug\net8.0\MyModelsLib.AssemblyInfoInputs.cache
+H:\webapi\lesson4\WebMyPizza\MyModelsLib\obj\Debug\net8.0\MyModelsLib.AssemblyInfo.cs
+H:\webapi\lesson4\WebMyPizza\MyModelsLib\obj\Debug\net8.0\MyModelsLib.csproj.CoreCompileInputs.cache
+H:\webapi\lesson4\WebMyPizza\MyModelsLib\bin\Debug\net8.0\MyModelsLib.deps.json
+H:\webapi\lesson4\WebMyPizza\MyModelsLib\bin\Debug\net8.0\MyModelsLib.dll
+H:\webapi\lesson4\WebMyPizza\MyModelsLib\bin\Debug\net8.0\MyModelsLib.pdb
+H:\webapi\lesson4\WebMyPizza\MyModelsLib\obj\Debug\net8.0\MyModelsLib.dll
+H:\webapi\lesson4\WebMyPizza\MyModelsLib\obj\Debug\net8.0\refint\MyModelsLib.dll
+H:\webapi\lesson4\WebMyPizza\MyModelsLib\obj\Debug\net8.0\MyModelsLib.pdb
+H:\webapi\lesson4\WebMyPizza\MyModelsLib\obj\Debug\net8.0\ref\MyModelsLib.dll

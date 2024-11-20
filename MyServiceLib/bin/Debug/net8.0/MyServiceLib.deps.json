@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "MyServiceLib/1.0.0": {
+        "dependencies": {
+          "MyModelsLib": "1.0.0"
+        },
+        "runtime": {
+          "MyServiceLib.dll": {}
+        }
+      },
+      "MyModelsLib/1.0.0": {
+        "runtime": {
+          "MyModelsLib.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "MyServiceLib/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "MyModelsLib/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

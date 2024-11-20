@@ -1,0 +1,15 @@
+H:\webapi\lesson4\WebMyPizza\MyServiceLib\obj\Debug\net8.0\MyServiceLib.csproj.AssemblyReference.cache
+H:\webapi\lesson4\WebMyPizza\MyServiceLib\obj\Debug\net8.0\MyServiceLib.GeneratedMSBuildEditorConfig.editorconfig
+H:\webapi\lesson4\WebMyPizza\MyServiceLib\obj\Debug\net8.0\MyServiceLib.AssemblyInfoInputs.cache
+H:\webapi\lesson4\WebMyPizza\MyServiceLib\obj\Debug\net8.0\MyServiceLib.AssemblyInfo.cs
+H:\webapi\lesson4\WebMyPizza\MyServiceLib\obj\Debug\net8.0\MyServiceLib.csproj.CoreCompileInputs.cache
+H:\webapi\lesson4\WebMyPizza\MyServiceLib\bin\Debug\net8.0\MyServiceLib.deps.json
+H:\webapi\lesson4\WebMyPizza\MyServiceLib\bin\Debug\net8.0\MyServiceLib.dll
+H:\webapi\lesson4\WebMyPizza\MyServiceLib\bin\Debug\net8.0\MyServiceLib.pdb
+H:\webapi\lesson4\WebMyPizza\MyServiceLib\bin\Debug\net8.0\MyModelsLib.dll
+H:\webapi\lesson4\WebMyPizza\MyServiceLib\bin\Debug\net8.0\MyModelsLib.pdb
+H:\webapi\lesson4\WebMyPizza\MyServiceLib\obj\Debug\net8.0\MyServiceLib.csproj.CopyComplete
+H:\webapi\lesson4\WebMyPizza\MyServiceLib\obj\Debug\net8.0\MyServiceLib.dll
+H:\webapi\lesson4\WebMyPizza\MyServiceLib\obj\Debug\net8.0\refint\MyServiceLib.dll
+H:\webapi\lesson4\WebMyPizza\MyServiceLib\obj\Debug\net8.0\MyServiceLib.pdb
+H:\webapi\lesson4\WebMyPizza\MyServiceLib\obj\Debug\net8.0\ref\MyServiceLib.dll
