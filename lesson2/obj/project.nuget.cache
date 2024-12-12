@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "Uw5OZ9DUBSJFLxx+BhknOdBXFOWTpS+9Z6G6KLnsoYMaUnN74ZR9NTBzAix9LzfGxXbCXSwFMdqspYjjSUzEhA==",
+  "dgSpecHash": "K1gGJeUkILbu6UFochVfQV75LrcwcLLDmts0D1LSTyI4giJdjeJAi94LqWMGYJ8oblk/TegXvvW5e7Q3F2q5Bw==",
   "success": true,
-  "projectFilePath": "H:\\webapi\\lesson4\\WebMyPizza\\lesson2\\lesson2.csproj",
+  "projectFilePath": "H:\\webapi\\lesson7\\WebApi\\lesson2\\lesson2.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\שמול שרה\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
     "C:\\Users\\שמול שרה\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\שמול שרה\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
     "C:\\Users\\שמול שרה\\.nuget\\packages\\swashbuckle.aspnetcore\\6.4.0\\swashbuckle.aspnetcore.6.4.0.nupkg.sha512",
     "C:\\Users\\שמול שרה\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.4.0\\swashbuckle.aspnetcore.swagger.6.4.0.nupkg.sha512",
     "C:\\Users\\שמול שרה\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.4.0\\swashbuckle.aspnetcore.swaggergen.6.4.0.nupkg.sha512",

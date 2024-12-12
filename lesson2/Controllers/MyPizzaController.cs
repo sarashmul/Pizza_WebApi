@@ -1,16 +1,37 @@
 using System.Security.Cryptography;
 using Microsoft.AspNetCore.Mvc;
+using MyModelsLib;
 using MyModelsLib.Interface;
+using MyFileServiceLib;
+using  MyFileServiceLib.Interface;
+using System.ComponentModel.DataAnnotations;
 namespace lesson2.Controllers;
+// using MyFileServiceLib;
+// using  MyFileServiceLib.Interface;
+
 
 public class MyPizzaController : BaseCcntroller
 {
 
 IPizzaService _M;
-public MyPizzaController(IPizzaService p)
+IFileService<MyPizza> _File;
+public MyPizzaController(IPizzaService p, IFileService<MyPizza> f)
 {
     _M = p;
+    _File = f;
 }
+
+// [Route("[action]/{add}")]
+// [HttpPost]
+// public IActionResult Add(int id,bool isGlotan,string nameOfPizza){
+//     var PizzaAdd=_M.SAdd(id,isGlotan,nameOfPizza);
+//     if(!PizzaAdd){
+//        return NotFound();
+//     }
+//      return Ok();
+// }
+
+
 
 [Route("[action]/{id}")]
 [HttpGet]
@@ -19,7 +40,7 @@ public MyPizzaController(IPizzaService p)
 // return Ok();
 // }
 
-public IActionResult GetById(int id){
+public IActionResult GetById([Range(1,1000)]int id){
     var PizzaName = _M.SGetById(id);
     if (PizzaName==null){
         return NotFound();
@@ -30,7 +51,7 @@ public IActionResult GetById(int id){
 
 [Route("[action]")]
 [HttpPost]
-public IActionResult Post(string nameOfPizza,int id,bool glotan ){
+public IActionResult Post([FromQuery]string nameOfPizza,int id,bool glotan ){
  var add = _M.SPost(nameOfPizza,id,glotan); 
  if  (add)
         return Ok();
@@ -61,5 +82,7 @@ public void Del(int id){
    _M.SDel(id);
   
 }
+
+
 }
 

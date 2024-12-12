@@ -8,12 +8,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\MyServiceLib\MyServiceLib.csproj" />
     <ProjectReference Include="..\MyModelsLib\MyModelsLib.csproj" />
+    <ProjectReference Include="..\MyFileServiceLib\MyFileServiceLib.csproj" />
   </ItemGroup>
 
 </Project>
