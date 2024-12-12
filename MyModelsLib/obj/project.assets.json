@@ -15,11 +15,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "H:\\webapi\\lesson4\\WebMyPizza\\MyModelsLib\\MyModelsLib.csproj",
+      "projectUniqueName": "H:\\webapi\\lesson7\\WebApi\\MyModelsLib\\MyModelsLib.csproj",
       "projectName": "MyModelsLib",
-      "projectPath": "H:\\webapi\\lesson4\\WebMyPizza\\MyModelsLib\\MyModelsLib.csproj",
+      "projectPath": "H:\\webapi\\lesson7\\WebApi\\MyModelsLib\\MyModelsLib.csproj",
       "packagesPath": "C:\\Users\\שמול שרה\\.nuget\\packages\\",
-      "outputPath": "H:\\webapi\\lesson4\\WebMyPizza\\MyModelsLib\\obj\\",
+      "outputPath": "H:\\webapi\\lesson7\\WebApi\\MyModelsLib\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",

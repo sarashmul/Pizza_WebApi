@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "VHFtI+ZqizlXVXpAPeJbX2YK8IdyMKNfvdiL5pYrs9cTZia4xLvpMScGkd5bksy4/LCNiZL2siKB7AcacFbIoA==",
+  "dgSpecHash": "hKrZA7/2XPAvggqA1DjrJDmU8+bO6+xXRADxztznOLTM3meaJRT9SGdZkkofIAfwE/uHc30Z89kJhhQzoAfP+Q==",
   "success": true,
-  "projectFilePath": "H:\\webapi\\lesson4\\WebMyPizza\\MyServiceLib\\MyServiceLib.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "H:\\webapi\\lesson7\\WebApi\\MyServiceLib\\MyServiceLib.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\שמול שרה\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
   "logs": []
 }

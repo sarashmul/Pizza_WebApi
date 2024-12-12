@@ -1,0 +1,14 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\lesson2",
+    "\\lesson2\\Controllers",
+    "\\MyFileServiceLib",
+    "\\MyFileServiceLib\\Interface",
+    "\\MyModelsLib",
+    "\\MyModelsLib\\Interfaces",
+    "\\MyServiceLib"
+  ],
+  "SelectedNode": "\\MyModelsLib\\Interfaces\\IPizzaService.cs",
+  "PreviewInSolutionExplorer": false
+}

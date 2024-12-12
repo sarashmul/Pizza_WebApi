@@ -4,61 +4,90 @@
 // using System.Text.Json;
 // using System.Threading.Tasks;
 // using lesson2.Modells;
+using System.Configuration;
 using MyModelsLib;
 using MyModelsLib.Interface;
-
+using MyFileServiceLib;
+using MyFileServiceLib.Interface;
 namespace MyServiceLib;
 
 
-   public class PizzaService : IPizzaService
-    {
-
+public class PizzaService : IPizzaService 
+{
+    
     private IPizzaService I;
-public List<MyPizza> Pizzalist=new List<MyPizza>(){
+    IFileService<MyPizza> _File;
+    public PizzaService( IFileService<MyPizza> f)
+    {
+        _File = f;
+    }
+    public List<MyPizza> Pizzalist=new List<MyPizza>(){
     new MyPizza("bazzal",105,true),
     new MyPizza("pitriot",103,false),
     new MyPizza("agvania",107,true),
     new MyPizza("zeitim",109,true)
 };
 
-
+// public bool SAdd(int id,bool isGlotan,string nameOfPizza){
+//     MyPizza p=new MyPizza(nameOfPizza,id,isGlotan);
+//     return true;
+// }
 public string SGetById(int id){
-    foreach(MyPizza p in Pizzalist)
+      var PizzaList= _File.Read(@"H:\webapi\lesson7\WebApi\lesson2\pizzacollections.json");
+        foreach (MyPizza p in PizzaList)
         if(p.Id==id)return "the pizza is: "+p.NameOfPizza + ",glotan?"+p.IsGlotan;
-    return null;
+     return null;
 }
 
-
+    //File.Create("PizzaJson.json");
 
 public bool SPost(string nameOfPizza,int id,bool glotan ){
-Pizzalist.Add(new MyPizza(nameOfPizza,id,glotan));
-if(this.SGetById(id)!=null)
-   return true;
-return false;
+        MyPizza pizza =new MyPizza(nameOfPizza, id, glotan);
+        _File.Write(pizza, @"H:\webapi\lesson7\WebApi\lesson2\pizzacollections.json");
+        if(this.SGetById(id)!=null)
+           return true;
+        return false;
 }
 
 
 public bool SputName(int id, string name){
-    foreach(MyPizza p in Pizzalist)
-        if(p.Id==id) {
-             p.NameOfPizza = name;
-             return true;
-        }
-    return false;    
-  
-}
+        var PizzaList = _File.Read(@"H:\webapi\lesson7\WebApi\lesson2\pizzacollections.json");
+
+    foreach (MyPizza p in PizzaList)
+            if (p.Id == id)
+            {
+                p.NameOfPizza = name;
+                _File.Update(PizzaList, @"H:\webapi\lesson7\WebApi\lesson2\pizzacollections.json");
+                return true;
+            }
+        return false;
+
+    }
 
 
 public void SputGlotan(int id, bool glotan){
-    foreach(MyPizza p in Pizzalist)
-        if(p.Id==id)  p.IsGlotan = glotan;
-  
+        var PizzaList = _File.Read(@"H:\webapi\lesson7\WebApi\lesson2\pizzacollections.json");
+
+    foreach (MyPizza p in PizzaList)
+            if (p.Id == id)
+            {
+                p.IsGlotan = glotan;
+                _File.Update(PizzaList, @"H:\webapi\lesson7\WebApi\lesson2\pizzacollections.json");
+                
+            }
 }
 
 
 public void SDel(int id){
-    foreach(var i in Pizzalist){
-        if(i.Id==id)  Pizzalist.Remove(i);}
+        var PizzaList = _File.Read(@"H:\webapi\lesson7\WebApi\lesson2\pizzacollections.json");
+
+       foreach(var i in Pizzalist){
+           if(i.Id==id) {
+            Pizzalist.Remove(i);
+            _File.Update(PizzaList, @"H:\webapi\lesson7\WebApi\lesson2\pizzacollections.json");
+           }
+                
+            }
   
 }
 
