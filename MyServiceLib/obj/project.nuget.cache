@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "hKrZA7/2XPAvggqA1DjrJDmU8+bO6+xXRADxztznOLTM3meaJRT9SGdZkkofIAfwE/uHc30Z89kJhhQzoAfP+Q==",
+  "dgSpecHash": "dEBusAWHRANNOnqfPW59+SJNKX0ld5zbt1jTfEH5mLtSJuTm0f30cxPb9vMLuHx+6LytQFazeqIAqLgNmX5/3A==",
   "success": true,
-  "projectFilePath": "H:\\webapi\\lesson7\\WebApi\\MyServiceLib\\MyServiceLib.csproj",
+  "projectFilePath": "H:\\webapi\\lesson8\\WebApi\\MyServiceLib\\MyServiceLib.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\שמול שרה\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
   ],

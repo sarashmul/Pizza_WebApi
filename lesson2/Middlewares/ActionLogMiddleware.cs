@@ -13,7 +13,7 @@ namespace lesson2.Middlewares
     {
         private readonly RequestDelegate _next;
         private IFileService<string> _file;
-        private string _path=@"H:\webapi\lesson7\WebApi\lesson2\actionLog.txt";
+        private string _path=@"H:\webapi\lesson8\WebApi\lesson2\actionLog.txt";
         public ActionLogMiddleware(RequestDelegate next, IFileService<string> file)
         {
             _next = next;

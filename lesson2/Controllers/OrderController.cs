@@ -21,8 +21,12 @@ public OrderController (IOrderService o)
 
 public IActionResult OGetById(int id){
     var Order = _o.SOGetById(id);
-    if (Order==null){
-        return NotFound();
+    if (Order!=null){
+            Console.WriteLine("in if");
+
+        return Ok(Order);
     }
-     return Ok();
+        Console.WriteLine("after if");
+
+     return NotFound();
 }}

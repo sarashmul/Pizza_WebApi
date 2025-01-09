@@ -5,6 +5,7 @@ using MyModelsLib.Interface;
 using MyFileServiceLib;
 using  MyFileServiceLib.Interface;
 using System.ComponentModel.DataAnnotations;
+using Microsoft.AspNetCore.Authorization;
 namespace lesson2.Controllers;
 // using MyFileServiceLib;
 // using  MyFileServiceLib.Interface;
@@ -42,15 +43,17 @@ public MyPizzaController(IPizzaService p, IFileService<MyPizza> f)
 
 public IActionResult GetById([Range(1,1000)]int id){
     var PizzaName = _M.SGetById(id);
+    Console.WriteLine(PizzaName);
     if (PizzaName==null){
-        return NotFound();
+        return NotFound("this pizza is not found");
     }
-     return Ok();
+     return Ok(PizzaName);
 }
 
 
 [Route("[action]")]
 [HttpPost]
+[Authorize(Policy = "SuperWorker")]
 public IActionResult Post([FromQuery]string nameOfPizza,int id,bool glotan ){
  var add = _M.SPost(nameOfPizza,id,glotan); 
  if  (add)
@@ -61,6 +64,7 @@ public IActionResult Post([FromQuery]string nameOfPizza,int id,bool glotan ){
 
 [Route("[action]/{id}/{name}")]
 [HttpPut]
+[Authorize(Policy = "SuperWorker")]
 public IActionResult putName(int id, string name){
    var d=_M.SputName(id, name);
         if(d) 
@@ -71,6 +75,7 @@ public IActionResult putName(int id, string name){
 
 [Route("[action]/{id}/{glotan}")]
 [HttpPut]
+[Authorize(Policy = "SuperWorker")]
 public void putGlotan(int id, bool glotan){
     _M.SputGlotan(id, glotan);
   
@@ -78,6 +83,7 @@ public void putGlotan(int id, bool glotan){
 
 [Route("[action]/{id}")]
 [HttpDelete]
+[Authorize(Policy = "SuperWorker")]
 public void Del(int id){
    _M.SDel(id);
   
