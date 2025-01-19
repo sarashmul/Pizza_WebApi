@@ -1,23 +1,44 @@
 var baseURL = "http://localhost:5125";
-// function load() {
-//     fetch(baseURL + "/lesson2")
-//         .then((res) => res.json())
-//         .then((data) => fillpizzaTbl(data))
-//         .catch((error) => console.log(error))
+var token="";
 
-// }
-// function fillpizzaTbl(data) {
-//     var table = document.getElementById('pizzalist');
-//     data.forEach(function (pizza) {
-//         var tr = document.createElement('tr');
-//         tr.innerHTML = '<td>' + pizza.id + '</td>' +
-//             '<td>' + pizza.name + '</td>' +
-//             '<td>' + pizza.isglotan + '</td>' ;
-//         var tBody = table.getElementsByTagName('tbody')[0];
-//         tBody.appendChild(tr);
-//     });
-// }
+
+function login() {
+    var user={};
+    user.Password=document.getElementById('password').value;
+    user.Name=document.getElementById('namel').value;
+    console.log(user);
+
+
+
+
+    var myHeaders = new Headers();
+    myHeaders.append("Content-Type", "application/json");
+    var raw = JSON.stringify(user);
+
+    const requestOptions = {
+        method: "POST",
+        // redirect: "follow"
+        headers: myHeaders,
+        body: raw
+      };
+      fetch(`${baseURL}/Login/Login?name=${user.Name}&password=${user.Password}`, requestOptions)
+        .then((response) => response.text())
+        .then((result) =>{
+          token = result;
+          document.getElementById('loginSection').style.display = 'none'; // Hide login section
+          document.getElementById('pizzaSection').style.display = 'block'; // Show pizza section
+      })
+        .catch((error) => console.error(error))
+        
+        ;
+
+
+}
+
+
+
 function addPizza() {
+  console.log("(token in add)", token);
     var pizza={};
     pizza.Id=document.getElementById('id').value;
     pizza.Name=document.getElementById('name').value;
@@ -25,6 +46,7 @@ function addPizza() {
     console.log(pizza);
     var myHeaders = new Headers();
     myHeaders.append("Content-Type", "application/json");
+    myHeaders.append("Authorization", `Bearer ${token}`);
 
     var raw = JSON.stringify(pizza);
 

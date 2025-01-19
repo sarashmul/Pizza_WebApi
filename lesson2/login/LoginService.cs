@@ -33,7 +33,7 @@
 //             if (p.Password.Equals(password))
 //             return true;
 //         }
-       
+
 //      return false;
 
 //     }
@@ -75,7 +75,7 @@
 
 
 
- using System;
+using System;
 // using System.Collections.Generic;
 // using System.IdentityModel.Tokens.Jwt;
 // using System.Linq;
@@ -90,48 +90,51 @@
 // using MyFileServiceLib.Interface;
 
 // using System.Collections.Generic;
- using MyModelsLib;
+using MyModelsLib;
 // using MyModelsLib.Interface;
- using MyFileServiceLib;
- using MyFileServiceLib.Interface;
+using MyFileServiceLib;
+using MyFileServiceLib.Interface;
 // using lesson2.login;
 using MyModelsLib.Interface;
+using Microsoft.AspNetCore.Http.HttpResults;
 
 
 namespace lesson2.login
 
 {
 
-public class LoginService : ILoginService
+    public class LoginService : ILoginService
 
-{
+    {
 
-private readonly IFileService<Worker> _fileService;
-
-
-public LoginService(IFileService<Worker> fileService) => _fileService = fileService;
+        private readonly IFileService<Worker> _fileService;
 
 
-public bool IsExist(string username, string password)
+        //public LoginService(IFileService<Worker> fileService) => _fileService = fileService;
+                public LoginService(IFileService<Worker> fileService)
+        {
+            _fileService = fileService;
+        }
 
-{
+        public Worker IsExist(string username, string password)
 
-var workerList = _fileService.Read(@"H:\webapi\lesson8\WebApi\lesson2\workers.json");
+        {
+           Console.WriteLine("hihi IsExist");
+            var workerList = _fileService.Read(@"H:\webapi\lesson9\WebApi\lesson2\workers.json");
+           Console.WriteLine("hihi IsExist2");
+            foreach (Worker worker in workerList)
+            {
+                 Console.WriteLine("hihi IsExist3");
+                if (worker.NameOfWorker.Equals(username) && worker.Password.Equals(password)){
+                    Console.WriteLine("hihi IsExist4"+worker.NameOfWorker);
+                    return worker;
+                }
+            }
+            Console.WriteLine("hihi IsExist5"+username+""+password);
+            return null;
 
-foreach (Worker worker in workerList)
+        }
 
-{
-
-if (worker.NameOfWorker.Equals(username) && worker.Password.Equals(password))
-
-return true;
-
-}
-
-return false;
-
-}
-
-}
+    }
 
 }

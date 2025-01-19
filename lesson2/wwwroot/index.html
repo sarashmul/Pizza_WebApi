@@ -9,8 +9,28 @@
 </head>
 
 <body >
-    <div>
-        <span>pizza list</span>
+
+    <div id="loginSection">
+        <span>login</span>
+        <table id="login">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Password</th>
+                </tr>            
+            </thead>
+            <tbody >
+    
+            </tbody>
+        </table>
+        <input id="namel" type="text">
+        <input id="password" type="text">
+        <input type="button" value="Login" onclick="login()">
+
+    </div>
+
+    <div id="pizzaSection" style="display: none;">
+        <span>add pizza</span>
         <table id="pizzalist">
             <thead>
                 <tr><th>id</th>
@@ -32,5 +52,9 @@
 
     <script src="./js/MyPizza.js"></script>
 
+
 </body>
 </html>
+
+
+

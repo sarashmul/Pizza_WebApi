@@ -32,18 +32,19 @@ namespace lesson2.Controllers
         [Route("[action]")]
         public ActionResult<string> Login(string name, string password)
         {
-
-            if (password.Equals("329"))
+               Console.WriteLine("hihi Login");
+          var u=_user.IsExist(name,password);
+           if (u==null)
+           //if (password.Equals("234"))
             {
                 return Unauthorized();
             }
 
-
+        
             var claims = new List<Claim>
      {
-         new Claim("role", "Admin"),
-         new Claim("name","john"),
-         new Claim("brithdatae","")
+         new Claim("Role", u.Role),
+        //  new Claim("name",u.NameOfWorker)
      };
 
             var token = MyPizzaTokenService.GetToken(claims);

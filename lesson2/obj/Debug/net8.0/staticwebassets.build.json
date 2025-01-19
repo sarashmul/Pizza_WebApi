@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "BLumtIKdj9ihpOvjaGE+jHy6MSGW/8NzdVquRuHxYn8=",
+  "Hash": "70/pCY7Cla/B+0R9860CwEzAn7pU8lWdsl1Ni/Hsl+8=",
   "Source": "lesson2",
   "BasePath": "_content/lesson2",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "lesson2\\wwwroot",
       "Source": "lesson2",
-      "ContentRoot": "H:\\webapi\\lesson8\\WebApi\\lesson2\\wwwroot\\",
+      "ContentRoot": "H:\\webapi\\lesson9\\WebApi\\lesson2\\wwwroot\\",
       "BasePath": "_content/lesson2",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "H:\\webapi\\lesson8\\WebApi\\lesson2\\wwwroot\\index.html",
+      "Identity": "H:\\webapi\\lesson9\\WebApi\\lesson2\\wwwroot\\index.html",
       "SourceId": "lesson2",
       "SourceType": "Discovered",
-      "ContentRoot": "H:\\webapi\\lesson8\\WebApi\\lesson2\\wwwroot\\",
+      "ContentRoot": "H:\\webapi\\lesson9\\WebApi\\lesson2\\wwwroot\\",
       "BasePath": "_content/lesson2",
       "RelativePath": "index.html",
       "AssetKind": "All",
@@ -36,10 +36,10 @@
       "OriginalItemSpec": "wwwroot\\index.html"
     },
     {
-      "Identity": "H:\\webapi\\lesson8\\WebApi\\lesson2\\wwwroot\\js\\Login.js",
+      "Identity": "H:\\webapi\\lesson9\\WebApi\\lesson2\\wwwroot\\js\\Login.js",
       "SourceId": "lesson2",
       "SourceType": "Discovered",
-      "ContentRoot": "H:\\webapi\\lesson8\\WebApi\\lesson2\\wwwroot\\",
+      "ContentRoot": "H:\\webapi\\lesson9\\WebApi\\lesson2\\wwwroot\\",
       "BasePath": "_content/lesson2",
       "RelativePath": "js/Login.js",
       "AssetKind": "All",
@@ -55,10 +55,10 @@
       "OriginalItemSpec": "wwwroot\\js\\Login.js"
     },
     {
-      "Identity": "H:\\webapi\\lesson8\\WebApi\\lesson2\\wwwroot\\js\\MyPizza.js",
+      "Identity": "H:\\webapi\\lesson9\\WebApi\\lesson2\\wwwroot\\js\\MyPizza.js",
       "SourceId": "lesson2",
       "SourceType": "Discovered",
-      "ContentRoot": "H:\\webapi\\lesson8\\WebApi\\lesson2\\wwwroot\\",
+      "ContentRoot": "H:\\webapi\\lesson9\\WebApi\\lesson2\\wwwroot\\",
       "BasePath": "_content/lesson2",
       "RelativePath": "js/MyPizza.js",
       "AssetKind": "All",
@@ -74,10 +74,10 @@
       "OriginalItemSpec": "wwwroot\\js\\MyPizza.js"
     },
     {
-      "Identity": "H:\\webapi\\lesson8\\WebApi\\lesson2\\wwwroot\\site\\Login.html",
+      "Identity": "H:\\webapi\\lesson9\\WebApi\\lesson2\\wwwroot\\site\\Login.html",
       "SourceId": "lesson2",
       "SourceType": "Discovered",
-      "ContentRoot": "H:\\webapi\\lesson8\\WebApi\\lesson2\\wwwroot\\",
+      "ContentRoot": "H:\\webapi\\lesson9\\WebApi\\lesson2\\wwwroot\\",
       "BasePath": "_content/lesson2",
       "RelativePath": "site/Login.html",
       "AssetKind": "All",
@@ -93,10 +93,10 @@
       "OriginalItemSpec": "wwwroot\\site\\Login.html"
     },
     {
-      "Identity": "H:\\webapi\\lesson8\\WebApi\\lesson2\\wwwroot\\site\\site.css",
+      "Identity": "H:\\webapi\\lesson9\\WebApi\\lesson2\\wwwroot\\site\\site.css",
       "SourceId": "lesson2",
       "SourceType": "Discovered",
-      "ContentRoot": "H:\\webapi\\lesson8\\WebApi\\lesson2\\wwwroot\\",
+      "ContentRoot": "H:\\webapi\\lesson9\\WebApi\\lesson2\\wwwroot\\",
       "BasePath": "_content/lesson2",
       "RelativePath": "site/site.css",
       "AssetKind": "All",

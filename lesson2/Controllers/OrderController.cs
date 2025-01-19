@@ -29,4 +29,18 @@ public IActionResult OGetById(int id){
         Console.WriteLine("after if");
 
      return NotFound();
-}}
+}
+    [Route("[action]")]
+    [HttpPost]
+    
+    public IActionResult OPost(string nameOfWorker, int id ,string numCard, int date ,int cvv)
+    {
+        var add = _o.SOPost(nameOfWorker,id ,numCard,date ,cvv);
+        if (add!=null)
+            return Ok(add);
+        return NotFound();
+    }
+
+
+
+}

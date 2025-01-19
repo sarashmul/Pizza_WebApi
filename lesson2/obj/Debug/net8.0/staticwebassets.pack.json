@@ -1,23 +1,23 @@
 {
   "Files": [
     {
-      "Id": "H:\\webapi\\lesson8\\WebApi\\lesson2\\wwwroot\\index.html",
+      "Id": "H:\\webapi\\lesson9\\WebApi\\lesson2\\wwwroot\\index.html",
       "PackagePath": "staticwebassets\\index.html"
     },
     {
-      "Id": "H:\\webapi\\lesson8\\WebApi\\lesson2\\wwwroot\\js\\Login.js",
+      "Id": "H:\\webapi\\lesson9\\WebApi\\lesson2\\wwwroot\\js\\Login.js",
       "PackagePath": "staticwebassets\\js\\Login.js"
     },
     {
-      "Id": "H:\\webapi\\lesson8\\WebApi\\lesson2\\wwwroot\\js\\MyPizza.js",
+      "Id": "H:\\webapi\\lesson9\\WebApi\\lesson2\\wwwroot\\js\\MyPizza.js",
       "PackagePath": "staticwebassets\\js\\MyPizza.js"
     },
     {
-      "Id": "H:\\webapi\\lesson8\\WebApi\\lesson2\\wwwroot\\site\\Login.html",
+      "Id": "H:\\webapi\\lesson9\\WebApi\\lesson2\\wwwroot\\site\\Login.html",
       "PackagePath": "staticwebassets\\site\\Login.html"
     },
     {
-      "Id": "H:\\webapi\\lesson8\\WebApi\\lesson2\\wwwroot\\site\\site.css",
+      "Id": "H:\\webapi\\lesson9\\WebApi\\lesson2\\wwwroot\\site\\site.css",
       "PackagePath": "staticwebassets\\site\\site.css"
     },
     {

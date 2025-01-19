@@ -19,9 +19,25 @@ var baseURL = "http://localhost:5125";
 // }
 function login() {
     var user={};
-    user.Id=document.getElementById('password').value;
+    user.Password=document.getElementById('password').value;
     user.Name=document.getElementById('name').value;
     console.log(user);
+
+
+    // const myHeaders = new Headers();
+    // myHeaders.append("Authorization", "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJSb2xlIjoiQWRtaW4iLCJleHAiOjE3Mzk4ODMyOTYsImlzcyI6Imh0dHBzOi8vTXlQaXp6YS5jb20iLCJhdWQiOiJodHRwczovL015UGl6emEuY29tIn0.uwa85bMwQWj4t0UJp6WkVDp6oL2RQdWOoP4tpqzCUGY");
+    
+    // const requestOptions = {
+    //   method: "POST",
+    //   headers: myHeaders,
+    //   redirect: "follow"
+    // };
+    
+    // fetch("http://localhost:5125/Login/Login?name=sara&password=329", requestOptions)
+    //   .then((response) => response.text())
+    //   .then((result) => console.log(result))
+    //   .catch((error) => console.error(error));
+
     var myHeaders = new Headers();
     myHeaders.append("Content-Type", "application/json");
 
@@ -34,10 +50,12 @@ function login() {
         body: raw
       };
       
-      fetch(`${baseURL}/MyPizza/Post?nameOfPizza=${pizza.Name}&id=${pizza.Id}&glotan=${pizza.IsGlotan}`, requestOptions)
+      fetch(`${baseURL}/Login/Login?name=${user.Name}&password=${user.Password}`, requestOptions)
         .then((response) => response.text())
         .then((result) => console.log(result))
-        .catch((error) => console.error(error));
+        .catch((error) => console.error(error))
+        const token=result.token
+        ;
 
 
 }

@@ -26,12 +26,14 @@ builder.Services.AddSingleton<IPizzaService, PizzaService>();
 builder.Services.AddSingleton<IWorkerService, WorkerService>();
 builder.Services.AddSingleton<IOrderService, OrderService>();
 builder.Services.AddTransient<ILoginService, LoginService>();
-builder.Services.AddSingleton<IFileService<MyPizza>>(new ReadWrite<MyPizza>(@"H:\webapi\lesson8\WebApi\lesson2\pizzacollections.json"));
-builder.Services.AddSingleton<IFileService<Worker>>(new ReadWrite<Worker>(@"H:\webapi\lesson8\WebApi\lesson2\workers.json"));
-builder.Services.AddSingleton<IFileService<string>>(new ReadWrite<string>(@"H:\webapi\lesson8\WebApi\lesson2\actionLog.txt"));
+builder.Services.AddSingleton<IFileService<MyPizza>>(new ReadWrite<MyPizza>(@"H:\webapi\lesson9\WebApi\lesson2\pizzacollections.json"));
+builder.Services.AddSingleton<IFileService<Worker>>(new ReadWrite<Worker>(@"H:\webapi\lesson9\WebApi\lesson2\workers.json"));
+//builder.Services.AddSingleton<IFileService<Order>>(new ReadWrite<Order>(@"H:\webapi\lesson9\WebApi\lesson2\Mail.json"));
+builder.Services.AddSingleton<IFileService<Order>>(new ReadWrite<Order>(@"H:\webapi\lesson9\WebApi\lesson2\Orders.json"));
+builder.Services.AddSingleton<IFileService<string>>(new ReadWrite<string>(@"H:\webapi\lesson9\WebApi\lesson2\actionLog.txt"));
 
 
-        builder.Services.AddSwaggerGen();
+        // builder.Services.AddSwaggerGen();
 
         builder.Services
               .AddAuthentication(options =>
@@ -46,8 +48,8 @@ builder.Services.AddSingleton<IFileService<string>>(new ReadWrite<string>(@"H:\w
 
         builder.Services.AddAuthorization(cfg =>
         {
-            cfg.AddPolicy("Admin", policy => policy.RequireClaim("role", "Admin"));
-            cfg.AddPolicy("SuperWorker", policy => policy.RequireClaim("role", "SuperWorker"));
+            cfg.AddPolicy("Admin", policy => policy.RequireClaim("Role", "Admin"));
+            cfg.AddPolicy("SuperWorker", policy => policy.RequireClaim("Role", "SuperWorker"));
         });
 
 
@@ -76,6 +78,19 @@ builder.Services.AddSingleton<IFileService<string>>(new ReadWrite<string>(@"H:\w
 
 // builder.Services.AddProblemDetails();
 var app = builder.Build();
+if (app.Environment.IsDevelopment())
+{
+    app.UseSwagger();
+    app.UseSwaggerUI();
+}
+if (app.Environment.IsDevelopment())
+{
+    app.UseExceptionHandler("/error-development");
+}
+else
+{
+    app.UseExceptionHandler("/error");
+}
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
@@ -85,7 +100,7 @@ if (app.Environment.IsDevelopment())
 }
 app.UseDefaultFiles();
 app.UseStaticFiles();
-app.UseractionLog();
+// app.UseractionLog();
 app.UseHttpsRedirection();
 app.UseAuthentication();
 app.UseRouting();
