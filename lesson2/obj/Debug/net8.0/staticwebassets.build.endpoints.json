@@ -1,94 +1,19 @@
 {
   "Version": 1,
-  "Hash": "5dTb22G4Mm3vccZKXwaiR/JaWYPn2EBgvGwfEgNvT1w=",
-  "Source": "lesson2",
-  "BasePath": "_content/lesson2",
-  "Mode": "Default",
   "ManifestType": "Build",
-  "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [
-    {
-      "Name": "lesson2\\wwwroot",
-      "Source": "lesson2",
-      "ContentRoot": "D:\\המסמכים\\Documents\\web api\\WebApi\\lesson2\\wwwroot\\",
-      "BasePath": "_content/lesson2",
-      "Pattern": "**"
-    }
-  ],
-  "Assets": [
-    {
-      "Identity": "D:\\המסמכים\\Documents\\web api\\WebApi\\lesson2\\wwwroot\\index.html",
-      "SourceId": "lesson2",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\המסמכים\\Documents\\web api\\WebApi\\lesson2\\wwwroot\\",
-      "BasePath": "_content/lesson2",
-      "RelativePath": "index#[.{fingerprint}]?.html",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "gawrsultdg",
-      "Integrity": "OEB3oGjsM8cOn0MQytMbVCWRL6AvFC/lxYMhcH+Qj9g=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\index.html"
-    },
-    {
-      "Identity": "D:\\המסמכים\\Documents\\web api\\WebApi\\lesson2\\wwwroot\\js\\MyPizza.js",
-      "SourceId": "lesson2",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\המסמכים\\Documents\\web api\\WebApi\\lesson2\\wwwroot\\",
-      "BasePath": "_content/lesson2",
-      "RelativePath": "js/MyPizza#[.{fingerprint}]?.js",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "1t4snrlllu",
-      "Integrity": "q6UqK29DqsqUkkZakWpNrxalUv8lu6SdUN/6k19hFpk=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\js\\MyPizza.js"
-    },
-    {
-      "Identity": "D:\\המסמכים\\Documents\\web api\\WebApi\\lesson2\\wwwroot\\site\\site.css",
-      "SourceId": "lesson2",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\המסמכים\\Documents\\web api\\WebApi\\lesson2\\wwwroot\\",
-      "BasePath": "_content/lesson2",
-      "RelativePath": "site/site#[.{fingerprint}]?.css",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "1czijlts1d",
-      "Integrity": "n0XjtQzcK92/5hWsDK/xefYTgP66ZyBtf8Z3CkT6I7g=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\site\\site.css"
-    }
-  ],
   "Endpoints": [
     {
       "Route": "index.gawrsultdg.html",
-      "AssetFile": "D:\\המסמכים\\Documents\\web api\\WebApi\\lesson2\\wwwroot\\index.html",
+      "AssetFile": "index.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
           "Name": "Accept-Ranges",
           "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
         },
         {
           "Name": "Content-Length",
@@ -105,10 +30,6 @@
         {
           "Name": "Last-Modified",
           "Value": "Wed, 01 Jan 2025 17:24:15 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
         }
       ],
       "EndpointProperties": [
@@ -117,23 +38,27 @@
           "Value": "gawrsultdg"
         },
         {
-          "Name": "label",
-          "Value": "index.html"
-        },
-        {
           "Name": "integrity",
           "Value": "sha256-OEB3oGjsM8cOn0MQytMbVCWRL6AvFC/lxYMhcH+Qj9g="
+        },
+        {
+          "Name": "label",
+          "Value": "index.html"
         }
       ]
     },
     {
       "Route": "index.html",
-      "AssetFile": "D:\\המסמכים\\Documents\\web api\\WebApi\\lesson2\\wwwroot\\index.html",
+      "AssetFile": "index.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
           "Name": "Accept-Ranges",
           "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
         },
         {
           "Name": "Content-Length",
@@ -150,10 +75,6 @@
         {
           "Name": "Last-Modified",
           "Value": "Wed, 01 Jan 2025 17:24:15 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
         }
       ],
       "EndpointProperties": [
@@ -165,12 +86,16 @@
     },
     {
       "Route": "js/MyPizza.1t4snrlllu.js",
-      "AssetFile": "D:\\המסמכים\\Documents\\web api\\WebApi\\lesson2\\wwwroot\\js\\MyPizza.js",
+      "AssetFile": "js/MyPizza.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
           "Name": "Accept-Ranges",
           "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
         },
         {
           "Name": "Content-Length",
@@ -187,10 +112,6 @@
         {
           "Name": "Last-Modified",
           "Value": "Wed, 01 Jan 2025 15:25:42 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
         }
       ],
       "EndpointProperties": [
@@ -199,23 +120,27 @@
           "Value": "1t4snrlllu"
         },
         {
-          "Name": "label",
-          "Value": "js/MyPizza.js"
-        },
-        {
           "Name": "integrity",
           "Value": "sha256-q6UqK29DqsqUkkZakWpNrxalUv8lu6SdUN/6k19hFpk="
+        },
+        {
+          "Name": "label",
+          "Value": "js/MyPizza.js"
         }
       ]
     },
     {
       "Route": "js/MyPizza.js",
-      "AssetFile": "D:\\המסמכים\\Documents\\web api\\WebApi\\lesson2\\wwwroot\\js\\MyPizza.js",
+      "AssetFile": "js/MyPizza.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
           "Name": "Accept-Ranges",
           "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
         },
         {
           "Name": "Content-Length",
@@ -232,10 +157,6 @@
         {
           "Name": "Last-Modified",
           "Value": "Wed, 01 Jan 2025 15:25:42 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
         }
       ],
       "EndpointProperties": [
@@ -247,12 +168,16 @@
     },
     {
       "Route": "site/site.1czijlts1d.css",
-      "AssetFile": "D:\\המסמכים\\Documents\\web api\\WebApi\\lesson2\\wwwroot\\site\\site.css",
+      "AssetFile": "site/site.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
           "Name": "Accept-Ranges",
           "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
         },
         {
           "Name": "Content-Length",
@@ -269,10 +194,6 @@
         {
           "Name": "Last-Modified",
           "Value": "Wed, 01 Jan 2025 17:49:42 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
         }
       ],
       "EndpointProperties": [
@@ -281,23 +202,27 @@
           "Value": "1czijlts1d"
         },
         {
-          "Name": "label",
-          "Value": "site/site.css"
-        },
-        {
           "Name": "integrity",
           "Value": "sha256-n0XjtQzcK92/5hWsDK/xefYTgP66ZyBtf8Z3CkT6I7g="
+        },
+        {
+          "Name": "label",
+          "Value": "site/site.css"
         }
       ]
     },
     {
       "Route": "site/site.css",
-      "AssetFile": "D:\\המסמכים\\Documents\\web api\\WebApi\\lesson2\\wwwroot\\site\\site.css",
+      "AssetFile": "site/site.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
           "Name": "Accept-Ranges",
           "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
         },
         {
           "Name": "Content-Length",
@@ -314,10 +239,6 @@
         {
           "Name": "Last-Modified",
           "Value": "Wed, 01 Jan 2025 17:49:42 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
         }
       ],
       "EndpointProperties": [

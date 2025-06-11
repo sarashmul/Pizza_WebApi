@@ -10,6 +10,7 @@ using lesson2.Middlewares;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+var dataPath = Path.Combine(Directory.GetCurrentDirectory(), "App_Data");
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
@@ -18,8 +19,12 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddSingleton<IPizzaService, PizzaService>();
 builder.Services.AddSingleton<IWorkerService, WorkerService>();
 builder.Services.AddSingleton<IOrderService, OrderService>();
-builder.Services.AddSingleton<IFileService<MyPizza>>(new ReadWrite<MyPizza>(@"H:\webapi\lesson7\WebApi\lesson2\pizzacollections.json"));
-builder.Services.AddSingleton<IFileService<string>>(new ReadWrite<string>(@"H:\webapi\lesson7\WebApi\lesson2\actionLog.txt"));
+builder.Services.AddSingleton<IFileService<MyPizza>>(
+    new ReadWrite<MyPizza>(Path.Combine(dataPath, "pizzacollections.json"))
+);
+builder.Services.AddSingleton<IFileService<string>>(
+    new ReadWrite<string>(Path.Combine(dataPath, "actionLog.txt"))
+);
 
 builder.Services.AddProblemDetails();
 var app = builder.Build();
@@ -40,6 +45,6 @@ app.UseAuthorization();
 
 app.MapControllers();
 
-app.UseractionLog();
+app.UseActionLog();
 
 app.Run();

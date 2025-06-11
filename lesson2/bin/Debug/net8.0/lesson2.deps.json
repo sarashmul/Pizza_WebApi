@@ -79,12 +79,18 @@
           "Newtonsoft.Json": "13.0.3"
         },
         "runtime": {
-          "MyFileServiceLib.dll": {}
+          "MyFileServiceLib.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "MyModelsLib/1.0.0": {
         "runtime": {
-          "MyModelsLib.dll": {}
+          "MyModelsLib.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "MyServiceLib/1.0.0": {
@@ -93,7 +99,10 @@
           "MyModelsLib": "1.0.0"
         },
         "runtime": {
-          "MyServiceLib.dll": {}
+          "MyServiceLib.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }

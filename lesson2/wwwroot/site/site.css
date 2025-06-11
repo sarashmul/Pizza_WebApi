@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+div {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: auto;
+}
+
+span {
+    font-size: 24px;
+    display: block;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    padding: 10px;
+    padding-left: 90px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.input-container {
+    display: flex; /* Keep input fields in a single row */
+    justify-content: space-between; /* Space between inputs */
+    flex-wrap: nowrap; /* Prevent wrapping */
+    margin-bottom: 20px; /* Space below the input container */
+}
+
+input[type="text"] {
+    flex: 1; /* Allow inputs to grow equally */
+    max-width: 150px; /* Set a max-width for inputs */
+    padding: 10px;
+    margin: 0 5px; /* Horizontal margin for spacing */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="button"] {
+    background-color: #28a745;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition: background-color 0.3s;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="button"]:hover {
+    background-color: #218838;
+}
+
+/* Media Query for responsiveness */
+@media (max-width: 600px) {
+    .input-container {
+        flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    }
+
+    input[type="text"] {
+        max-width: 100%; /* Allow inputs to take the full width on small screens */
+        margin: 5px 0; /* Adjust margins for vertical spacing */
+    }
+}

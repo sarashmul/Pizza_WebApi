@@ -10,7 +10,7 @@
 
 <body >
     <div>
-        <span>pizza list</span>
+        <span>my pizza</span>
         <table id="pizzalist">
             <thead>
                 <tr><th>id</th>
@@ -23,9 +23,11 @@
             </tbody>
         </table>
         
-        <input id="id" type="text">
-        <input id="name" type="text">
-        <input id="glotan" type="text">
+        <div class="input-container">
+            <input id="id" type="text" placeholder="ID">
+            <input id="name" type="text" placeholder="Name">
+            <input id="glotan" type="text" placeholder="Is Glotan">
+        </div>
         <input type="button" value="send" onclick="addPizza()">
     
     </div>  

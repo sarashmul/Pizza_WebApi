@@ -1,15 +1,15 @@
 {
   "Files": [
     {
-      "Id": "H:\\webapi\\lesson7\\WebApi\\lesson2\\wwwroot\\index.html",
+      "Id": "D:\\המסמכים\\Documents\\web api\\WebApi\\lesson2\\wwwroot\\index.html",
       "PackagePath": "staticwebassets\\index.html"
     },
     {
-      "Id": "H:\\webapi\\lesson7\\WebApi\\lesson2\\wwwroot\\js\\MyPizza.js",
+      "Id": "D:\\המסמכים\\Documents\\web api\\WebApi\\lesson2\\wwwroot\\js\\MyPizza.js",
       "PackagePath": "staticwebassets\\js\\MyPizza.js"
     },
     {
-      "Id": "H:\\webapi\\lesson7\\WebApi\\lesson2\\wwwroot\\site\\site.css",
+      "Id": "D:\\המסמכים\\Documents\\web api\\WebApi\\lesson2\\wwwroot\\site\\site.css",
       "PackagePath": "staticwebassets\\site\\site.css"
     },
     {
@@ -23,6 +23,10 @@
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.lesson2.props",
       "PackagePath": "buildTransitive\\lesson2.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.lesson2.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.lesson2.Microsoft.AspNetCore.StaticWebAssets.props",
