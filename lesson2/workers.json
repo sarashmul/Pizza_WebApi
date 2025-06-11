@@ -1,0 +1,37 @@
+[
+    {
+        "NameOfWorker": "johan",
+        "Id": 6789,
+        "Hours": 7,
+        "Role": "SuperWorker",
+        "Password": "329"
+    },
+    {
+        "NameOfWorker": "sara",
+        "Id": 329,
+        "Hours": 7,
+        "Role": "Admin",
+        "Password": "329"
+    },
+    {
+        "NameOfWorker": "miri",
+        "Id": 32,
+        "Hours": 9,
+        "Role": "SuperWorker",
+        "Password": "32"
+    },
+    {
+        "NameOfWorker": "efrat",
+        "Id": 1,
+        "Hours": 1,
+        "Role": "1",
+        "Password": "1"
+    },
+    {
+        "NameOfWorker": "aaa",
+        "Id": 456,
+        "Hours": 5,
+        "Role": "worker",
+        "Password": "753"
+    }
+]

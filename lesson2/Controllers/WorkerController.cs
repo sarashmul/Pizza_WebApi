@@ -1,4 +1,5 @@
 using System.Security.Cryptography;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 using MyModelsLib.Interface;
@@ -25,14 +26,15 @@ public IActionResult WGetById(int id){
     if (Worker==null){
         return NotFound();
     }
-     return Ok();
+     return Ok(Worker);
 }
 
 
 [Route("[action]")]
 [HttpPost]
-public IActionResult WPost(string nameOfWorker,int id,int hourS ){
- var add = _w.SWPost(nameOfWorker,id,hourS); 
+[Authorize(Policy = "Admin")]
+public IActionResult WPost(string nameOfWorker,int id,int hourS,string role,string password){
+ var add = _w.SWPost(nameOfWorker,id,hourS,role,password); 
  if  (add)
         return Ok();
   return NotFound();
@@ -41,6 +43,7 @@ public IActionResult WPost(string nameOfWorker,int id,int hourS ){
 
 [Route("[action]/{id}/{name}")]
 [HttpPut]
+[Authorize(Policy = "Admin")]
 public IActionResult WputName(int id, string name){
    var d=_w.SWputName(id, name);
         if(d) 
@@ -51,6 +54,7 @@ public IActionResult WputName(int id, string name){
 
 [Route("[action]/{id}/{glotan}")]
 [HttpPut]
+[Authorize(Policy = "Admin")]
 public void WputHours (int id, int hours ){
     _w.SWputHours(id, hours);
   
@@ -58,6 +62,7 @@ public void WputHours (int id, int hours ){
 
 [Route("[action]/{id}")]
 [HttpDelete]
+[Authorize(Policy = "Admin")]
 public void Del(int id){
    _w.SWDel(id);
   

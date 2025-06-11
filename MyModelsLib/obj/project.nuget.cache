@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "BIU0MAEZ8N5ntl3BGWjZXnpSvvnm0kUFit6c86MDMt2nSlZMpZjCOlpMyU0B6t9yGNfpj3hxmzuvDPj2vIecIA==",
+  "dgSpecHash": "4nsZJ4tkEX/zZlZS4mtkQxghpyEEYxStMvkSOZTN1A5sHCzXuB/FcvmbW5uX+IJY8vxVz8ZArIhqPLlpsMRh8g==",
   "success": true,
-  "projectFilePath": "H:\\webapi\\lesson7\\WebApi\\MyModelsLib\\MyModelsLib.csproj",
+  "projectFilePath": "H:\\webapi\\lesson8\\WebApi\\MyModelsLib\\MyModelsLib.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

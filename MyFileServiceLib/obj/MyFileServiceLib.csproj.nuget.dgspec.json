@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "H:\\webapi\\lesson7\\WebApi\\MyFileServiceLib\\MyFileServiceLib.csproj": {}
+    "H:\\webapi\\lesson8\\WebApi\\MyFileServiceLib\\MyFileServiceLib.csproj": {}
   },
   "projects": {
-    "H:\\webapi\\lesson7\\WebApi\\MyFileServiceLib\\MyFileServiceLib.csproj": {
+    "H:\\webapi\\lesson8\\WebApi\\MyFileServiceLib\\MyFileServiceLib.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "H:\\webapi\\lesson7\\WebApi\\MyFileServiceLib\\MyFileServiceLib.csproj",
+        "projectUniqueName": "H:\\webapi\\lesson8\\WebApi\\MyFileServiceLib\\MyFileServiceLib.csproj",
         "projectName": "MyFileServiceLib",
-        "projectPath": "H:\\webapi\\lesson7\\WebApi\\MyFileServiceLib\\MyFileServiceLib.csproj",
+        "projectPath": "H:\\webapi\\lesson8\\WebApi\\MyFileServiceLib\\MyFileServiceLib.csproj",
         "packagesPath": "C:\\Users\\שמול שרה\\.nuget\\packages\\",
-        "outputPath": "H:\\webapi\\lesson7\\WebApi\\MyFileServiceLib\\obj\\",
+        "outputPath": "H:\\webapi\\lesson8\\WebApi\\MyFileServiceLib\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -28,14 +28,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "H:\\webapi\\lesson7\\WebApi\\MyModelsLib\\MyModelsLib.csproj": {
-                "projectPath": "H:\\webapi\\lesson7\\WebApi\\MyModelsLib\\MyModelsLib.csproj"
+              "H:\\webapi\\lesson8\\WebApi\\MyModelsLib\\MyModelsLib.csproj": {
+                "projectPath": "H:\\webapi\\lesson8\\WebApi\\MyModelsLib\\MyModelsLib.csproj"
               }
             }
           }
@@ -75,14 +76,14 @@
         }
       }
     },
-    "H:\\webapi\\lesson7\\WebApi\\MyModelsLib\\MyModelsLib.csproj": {
+    "H:\\webapi\\lesson8\\WebApi\\MyModelsLib\\MyModelsLib.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "H:\\webapi\\lesson7\\WebApi\\MyModelsLib\\MyModelsLib.csproj",
+        "projectUniqueName": "H:\\webapi\\lesson8\\WebApi\\MyModelsLib\\MyModelsLib.csproj",
         "projectName": "MyModelsLib",
-        "projectPath": "H:\\webapi\\lesson7\\WebApi\\MyModelsLib\\MyModelsLib.csproj",
+        "projectPath": "H:\\webapi\\lesson8\\WebApi\\MyModelsLib\\MyModelsLib.csproj",
         "packagesPath": "C:\\Users\\שמול שרה\\.nuget\\packages\\",
-        "outputPath": "H:\\webapi\\lesson7\\WebApi\\MyModelsLib\\obj\\",
+        "outputPath": "H:\\webapi\\lesson8\\WebApi\\MyModelsLib\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -99,6 +100,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
