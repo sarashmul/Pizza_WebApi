@@ -1,27 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "H:\\webapi\\lesson8\\WebApi\\MyServiceLib\\MyServiceLib.csproj": {}
+    "D:\\המסמכים\\Documents\\web api\\WebApi\\MyServiceLib\\MyServiceLib.csproj": {}
   },
   "projects": {
-    "H:\\webapi\\lesson8\\WebApi\\MyFileServiceLib\\MyFileServiceLib.csproj": {
+    "D:\\המסמכים\\Documents\\web api\\WebApi\\MyFileServiceLib\\MyFileServiceLib.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "H:\\webapi\\lesson8\\WebApi\\MyFileServiceLib\\MyFileServiceLib.csproj",
+        "projectUniqueName": "D:\\המסמכים\\Documents\\web api\\WebApi\\MyFileServiceLib\\MyFileServiceLib.csproj",
         "projectName": "MyFileServiceLib",
-        "projectPath": "H:\\webapi\\lesson8\\WebApi\\MyFileServiceLib\\MyFileServiceLib.csproj",
-        "packagesPath": "C:\\Users\\שמול שרה\\.nuget\\packages\\",
-        "outputPath": "H:\\webapi\\lesson8\\WebApi\\MyFileServiceLib\\obj\\",
+        "projectPath": "D:\\המסמכים\\Documents\\web api\\WebApi\\MyFileServiceLib\\MyFileServiceLib.csproj",
+        "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
+        "outputPath": "D:\\המסמכים\\Documents\\web api\\WebApi\\MyFileServiceLib\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\שמול שרה\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\USER\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -35,8 +33,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "H:\\webapi\\lesson8\\WebApi\\MyModelsLib\\MyModelsLib.csproj": {
-                "projectPath": "H:\\webapi\\lesson8\\WebApi\\MyModelsLib\\MyModelsLib.csproj"
+              "D:\\המסמכים\\Documents\\web api\\WebApi\\MyModelsLib\\MyModelsLib.csproj": {
+                "projectPath": "D:\\המסמכים\\Documents\\web api\\WebApi\\MyModelsLib\\MyModelsLib.csproj"
               }
             }
           }
@@ -45,7 +43,13 @@
           "warnAsError": [
             "NU1605"
           ]
-        }
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net8.0": {
@@ -72,28 +76,26 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "H:\\webapi\\lesson8\\WebApi\\MyModelsLib\\MyModelsLib.csproj": {
+    "D:\\המסמכים\\Documents\\web api\\WebApi\\MyModelsLib\\MyModelsLib.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "H:\\webapi\\lesson8\\WebApi\\MyModelsLib\\MyModelsLib.csproj",
+        "projectUniqueName": "D:\\המסמכים\\Documents\\web api\\WebApi\\MyModelsLib\\MyModelsLib.csproj",
         "projectName": "MyModelsLib",
-        "projectPath": "H:\\webapi\\lesson8\\WebApi\\MyModelsLib\\MyModelsLib.csproj",
-        "packagesPath": "C:\\Users\\שמול שרה\\.nuget\\packages\\",
-        "outputPath": "H:\\webapi\\lesson8\\WebApi\\MyModelsLib\\obj\\",
+        "projectPath": "D:\\המסמכים\\Documents\\web api\\WebApi\\MyModelsLib\\MyModelsLib.csproj",
+        "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
+        "outputPath": "D:\\המסמכים\\Documents\\web api\\WebApi\\MyModelsLib\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\שמול שרה\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\USER\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -113,7 +115,13 @@
           "warnAsError": [
             "NU1605"
           ]
-        }
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net8.0": {
@@ -134,28 +142,26 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "H:\\webapi\\lesson8\\WebApi\\MyServiceLib\\MyServiceLib.csproj": {
+    "D:\\המסמכים\\Documents\\web api\\WebApi\\MyServiceLib\\MyServiceLib.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "H:\\webapi\\lesson8\\WebApi\\MyServiceLib\\MyServiceLib.csproj",
+        "projectUniqueName": "D:\\המסמכים\\Documents\\web api\\WebApi\\MyServiceLib\\MyServiceLib.csproj",
         "projectName": "MyServiceLib",
-        "projectPath": "H:\\webapi\\lesson8\\WebApi\\MyServiceLib\\MyServiceLib.csproj",
-        "packagesPath": "C:\\Users\\שמול שרה\\.nuget\\packages\\",
-        "outputPath": "H:\\webapi\\lesson8\\WebApi\\MyServiceLib\\obj\\",
+        "projectPath": "D:\\המסמכים\\Documents\\web api\\WebApi\\MyServiceLib\\MyServiceLib.csproj",
+        "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
+        "outputPath": "D:\\המסמכים\\Documents\\web api\\WebApi\\MyServiceLib\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\שמול שרה\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\USER\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -169,11 +175,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "H:\\webapi\\lesson8\\WebApi\\MyFileServiceLib\\MyFileServiceLib.csproj": {
-                "projectPath": "H:\\webapi\\lesson8\\WebApi\\MyFileServiceLib\\MyFileServiceLib.csproj"
+              "D:\\המסמכים\\Documents\\web api\\WebApi\\MyFileServiceLib\\MyFileServiceLib.csproj": {
+                "projectPath": "D:\\המסמכים\\Documents\\web api\\WebApi\\MyFileServiceLib\\MyFileServiceLib.csproj"
               },
-              "H:\\webapi\\lesson8\\WebApi\\MyModelsLib\\MyModelsLib.csproj": {
-                "projectPath": "H:\\webapi\\lesson8\\WebApi\\MyModelsLib\\MyModelsLib.csproj"
+              "D:\\המסמכים\\Documents\\web api\\WebApi\\MyModelsLib\\MyModelsLib.csproj": {
+                "projectPath": "D:\\המסמכים\\Documents\\web api\\WebApi\\MyModelsLib\\MyModelsLib.csproj"
               }
             }
           }
@@ -182,7 +188,13 @@
           "warnAsError": [
             "NU1605"
           ]
-        }
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net8.0": {
@@ -203,7 +215,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

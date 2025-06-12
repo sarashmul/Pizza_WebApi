@@ -1,0 +1,20 @@
+# קבצים שלא נרצה להכניס לתוך הדוקר אימג'
+bin/
+obj/
+*.user
+*.suo
+*.log
+*.pdb
+*.dll
+.vscode/
+.idea/
+*.nupkg
+*.snupkg
+.paket/
+*.sln.docstates
+.git/
+.gitignore
+Dockerfile
+README.md
+LICENSE
+.env
