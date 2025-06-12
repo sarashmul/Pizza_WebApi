@@ -1,8 +1,21 @@
+# services:
+#   - type: web
+#     name: pizza-api
+#     env: docker
+#     plan: free
+#     dockerfilePath: lesson2/Dockerfile
+#     buildCommand: ""
+#     startCommand: ""
+
+
 services:
   - type: web
     name: pizza-api
     env: docker
     plan: free
     dockerfilePath: lesson2/Dockerfile
-    buildCommand: ""
-    startCommand: ""
+    rootDir: lesson2 # שורה זו חשובה מאוד! היא אומרת ל-Render היכן הקוד של היישום שלך.
+    # buildCommand ו-startCommand לא נחוצים עבור פריסות Docker,
+    # שכן ה-Dockerfile מטפל בשלבים אלו.
+    # buildCommand: ""
+    # startCommand: ""
